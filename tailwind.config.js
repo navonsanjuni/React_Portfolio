@@ -5,6 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens:{
+      sm:"350px",
+      md:"768px",
+      lg:"1024px",
+      xl:"1280px",
+      "2xl":"1536px"
+    },
     colors:{
       brown: "#53423e",
       lightBrown: "#645550",
@@ -21,7 +28,11 @@ export default {
       lightGrey: "#978580",
       darkGrey: "#3f4441"
     },
-    extend: {},
+    extend: {
+      boxShadow :{
+        cyanShadow: "0px 0px 20px 0px rgba(94, 206, 220, 0.5)",
+      }
+    },
     fontFamily: {
       body:['Josefin Sans'],
       special:['Roboto']
